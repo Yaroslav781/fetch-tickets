@@ -1,13 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
-
-interface Ticket {
-  section: string;
-  row: string;
-  seatNumber: string;
-  price: number;
-}
+import { Ticket } from './interface/ticket.interface';
 
 @Injectable()
 export class ConcertTicketService {
